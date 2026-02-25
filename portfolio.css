@@ -1,0 +1,98 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.parent {
+display: grid;
+height: 100vh;
+grid-template-columns: 1fr 0.25fr repeat(2, 1.75fr) 0.25fr;
+grid-template-rows: 0.75fr 1fr 0.5fr;
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+} 
+
+figure {
+    grid-column: 3 / 4;   /* SARAKKEESEEN 3 */
+    grid-row: 2 / 3;      /* RIVILLE 2 */
+    margin-top: -110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.side-nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: start;
+  margin-top: 6px;
+  margin-left: 30px;
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 280px;
+}
+
+.side-nav .btn {
+  display: block;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  padding: 12px 16px;
+  font-family: "Cutive", serif;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+.side-nav .btn:hover,
+.side-nav .btn:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+h2 {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cutive", serif;
+    font-weight: 400;
+    font-size: 35pt;    
+}
+
+#minä {
+    width: 500px;
+    height: auto;
+}
+
+p {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    text-align: left;
+    margin-top: 2px;
+    font-family: "Cutive Mono", monospace;
+    font-weight: 400;
+    font-size: 15pt;
+  }
