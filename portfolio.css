@@ -16,7 +16,7 @@ grid-row-gap: 0px;
 figure {
     grid-column: 3 / 4;   /* SARAKKEESEEN 3 */
     grid-row: 2 / 3;      /* RIVILLE 2 */
-    margin-top: -110px;
+    margin-top: -1px;
     display: flex;
     justify-content: center;
     align-items: center;
