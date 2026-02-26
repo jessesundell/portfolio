@@ -96,3 +96,63 @@ p {
     font-weight: 400;
     font-size: 15pt;
   }
+
+@media (max-width: 768px) {
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  header,
+  nav,
+  h2,
+  figure,
+  p {
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  header { order: 1; }
+  nav.side-nav { order: 2; }
+  h2 { order: 3; }
+  figure { order: 4; }
+  p { order: 5; }
+
+  figure {
+    margin: 0 !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #minä {
+    max-width: 90vw;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .side-nav {
+    margin: 0;
+    padding: 0;
+  }
+
+  .side-nav .btn {
+    width: 100%;
+  }
+}
+
+
+.side-nav {
+    margin: 0 auto;
+
+    text-align: center;
+  }
+  
+  .side-nav .btn {
+    margin: 0 auto;
+  }
+
