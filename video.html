@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="video.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <title> Video</title>
+
+
+</head>
+<body>
+    <main>
+        <div class="parent"> 
+            <header>
+                    <img src="JSundell.png" alt="logo">
+            </header>      
+                <figure>
+
+                </figure>
+
+                <button class="menu-toggle" aria-label="Avaa valikko">☰</button>
+
+                <nav class="side-nav" aria-label="Päänavigaatio">
+                <ul>
+                <li><a class="btn" href="index.html">ETUSIVU</a></li>
+                <li><a class="btn" href="valokuvaus.html">VALOKUVAUS</a></li>
+                <li><a class="btn" href="video.html">VIDEO</a></li>
+                <li><a class="btn" href="web-projektit.html">WEB-PROJEKTIT</a></li>
+                <li><a class="btn" href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+                </ul>
+                </nav>
+
+                <h2>VIDEO</h2>
+                
+
+        </div> 
+    </main>
+        <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".side-nav");
+
+        menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        });
+        </script>
+    </body>
+</html>

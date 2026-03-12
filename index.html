@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="index.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap" rel="stylesheet">
+
+    <title> Jesse Sundell portfolio</title>
+
+
+</head>
+
+<body>
+    <main>
+        <div class="parent"> 
+            <header>
+                    <img src="JSundell.png" alt="logo">
+            </header>      
+                <figure>
+                   <img src="minä.jpg" alt="kuva minusta" id="minä">
+                   
+                </figure>
+
+                <button class="menu-toggle" aria-label="Avaa valikko">☰</button>
+
+                <nav class="side-nav" aria-label="Päänavigaatio">
+                <ul>
+                <li><a class="btn" href="index.html">ETUSIVU</a></li>
+                <li><a class="btn" href="valokuvaus.html">VALOKUVAUS</a></li>
+                <li><a class="btn" href="video.html">VIDEO</a></li>
+                <li><a class="btn" href="web-projektit.html">WEB-PROJEKTIT</a></li>
+                <li><a class="btn" href="yhteystiedot.html">YHTEYSTIEDOT</a></li>
+                </ul>
+                </nav>
+
+                <h2>KUKA OLEN?</h2>
+                    <p>
+                        Olen suurimmilta osin itseoppinut valo- ja videokuvaaja Helsinkistä. Valokuvausta olen harrastanut noin kahdeksan vuotta.
+                        Itsenäisen opiskelun ja harrastamisen lisäksi olen opiskellut Laajasalon opistossa medialinjalla media-alaa 
+                        vuosina 2023-2024. <br>
+                        Valokuvausharrastus alkoi katukuvauksella, joka on lähellä sydäntäni edelleen. Sen lisäksi teen potrettikuvauksia.
+                        Kiinnostuksena minulla olisi myös päästä kehittymään tapahtumakuvaajana erilaisissa tapahtumissa.
+                    <br><br>
+                        Media-alan lisäksi olen aloittanut tammikuussa 2026 opinnot Haaga-Helian ammattikorkeakoulussa
+                        tietojenkäsittelyn tradenomi-koulutuksessa. <br>
+                        Tähtäimessäni on suunnata opinnoissa digitaaliseen palvelumuotoiluun. Tämän pääaineen lisäksi ottaa kursseja
+                        muilta suuntautumisilta, kehittääkseni osaamista laajemmaksi, eikä keskittyä vain yhteen tiettyyn osa-alueeseen.
+                    </p>
+        </div> 
+    </main>
+        <script>
+        const menuToggle = document.querySelector(".menu-toggle");
+        const nav = document.querySelector(".side-nav");
+
+        menuToggle.addEventListener("click", () => {
+        nav.classList.toggle("active");
+        });
+        </script>
+    </body>
+</html>
