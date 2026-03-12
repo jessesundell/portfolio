@@ -148,7 +148,6 @@ h2 {
   }
 
   h2 { order: 4; }
-  figure { order: 5; }
   p { order: 6; }
 
 .side-nav ul {
@@ -181,5 +180,6 @@ h2 {
     height: auto;
     display: block;
   }
+
 
 }
