@@ -1,0 +1,185 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+
+.parent {
+  display: grid;
+  min-height: 100vh;
+  max-width: 1400px;
+  margin: 0 auto;
+
+  grid-template-columns:
+    1fr
+    60px
+    minmax(0, 1100px)
+    1fr;
+
+  grid-template-rows:
+    150px
+    auto
+    auto
+    100px;
+}
+
+
+header {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img {
+  max-width: 200px;
+  height: auto;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 30px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.side-nav {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  align-self: start;
+}
+
+.side-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  max-width: 280px;
+}
+
+.side-nav .btn {
+  display: block;
+  background: #ffffff;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid #ffffff;
+  border-radius: 0px;
+  padding: 12px 16px;
+  font-family: "Cutive", serif;
+  text-align: center;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  transition: transform 0.12s ease, box-shadow 0.12s ease, background-color 0.12s ease, color 0.12s ease;
+}
+
+.side-nav .btn:hover,
+.side-nav .btn:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.15);
+  outline: none;
+}
+
+h2 {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Cutive", serif;
+    font-weight: 400;
+    font-size: 35pt;    
+}
+
+.video-container {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+
+  width: 100%;
+  max-width: 900px;
+  justify-self: center;
+  margin-bottom: 0;
+}
+
+.video-container iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.video-container p {
+  margin-top: 8px;
+  max-width: 700px;
+  font-family: "Cutive Mono", monospace;
+  font-size: 15pt;
+  line-height: 1.6;
+}
+
+
+@media (max-width: 768px) {
+
+  .parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+  }
+
+  header { order: 1; }
+  .menu-toggle { 
+    display: block;
+    order: 2;
+  }
+
+  .side-nav { 
+    order: 3;
+    display: none;   /* NAV PIILOSSA */
+    width: 100%;
+  }
+
+  .side-nav.active {
+    display: flex;   /* NÄKYVÄ KUN HAMBURGERIA KLIKATAAN */
+    justify-content: center;
+  }
+
+  h2 { order: 4; }
+  figure { order: 5; }
+  p { order: 6; }
+
+.side-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-nav .btn {
+  width: 260px;   /* sama leveys kaikille */
+}
+
+  h2 {
+    text-align: center;
+  }
+
+.video-container {
+  order: 5;
+  width: 100%;
+  max-width: 900px;
+}
+
+  figure {
+    margin: 0;
+  }
+
+  #minä {
+    width: 100%;
+    max-width: 90vw;
+    height: auto;
+    display: block;
+  }
+
+}
